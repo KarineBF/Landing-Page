@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Sarala', sans-serif;
+    src: url('fonts/Righteous-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Righteous', cursive;
+    src: url('fonts/Sarala-Regular.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff2e7cb;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-attachment: fixed;
+    background: linear-gradient(68.15deg, #271416 16.62%, #3f2d28 85.61%); 
+}
+header{
+    text-align: center;
+}
+.cabeçalho{
+    color: white;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+    align-items: center; /* alinha os itens filhos verticalmente ao centro do elemento flex. */
+    justify-content: space-around; /* distribui os itens filhos horizontalmente de forma equilibrada, com espaço igualmente distribuído ao redor de cada item. */
+}
+menu > ul > li > a{
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+section > h1{
+    padding: 15px;
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.877);
+    font-family: 'Sarala', sans-serif;
+}
+#Balle-bot > p{
+    padding: 4px;
+    font-family: 'Sarala', sans-serif;
+}
+p{
+    font-family: 'Sarala', sans-serif;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}  
+li{
+    padding: 30px;
+}
+#Balle-bot{
+    top: 193%;
+    left: 17%;
+    position: absolute;
+}
+#paragrafo{
+    top: 106%;
+    left: 5%;
+    width: 370px;
+    position: absolute;
+    word-wrap: break-word;
+}
+#Me-adicione{
+    top: 167%;
+    left: 2%;
+    padding: 10px;
+    color: black;
+    position: absolute;
+    text-align: center;
+    background-color: #ecd6c4;
+    border: 1px solid #ecd6c4;
+    transform: translate(10%, 30%);
+    border-radius: 13px 13px 13px 13px;
+}
+#Me-adicione > p{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #743503c0 ;
+}
+#Me-adicione:hover{
+    color: white;
+    border: 1px solid #3d1c01a6;
+    background-color:  #3d1c0196;
+}
+section > img{
+    top: 100%;
+    left: 63%;
+    width: 243px;
+    position: absolute;
+}
+#Funções{
+    top: 823%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-55%, -236%);
+}
+h2{
+    top: -90%;
+    left: 27%;
+    padding: 32px;
+    width: 252px;
+    font-size: 16px;
+    position: absolute;
+    font-family: 'Righteous', cursive;
+    color: rgba(255, 255, 255, 0.856);
+    border-top: 1px solid rgba(255, 255, 255, 0.404);
+}
+footer{
+    left:0;
+    bottom: 0;
+    width: 1837px;
+    height: 152px;
+    position: fixed;
+    border-top: 1px solid rgba(255, 255, 255, 0.404);
+}
+footer > img{
+    width: 200px;
+    transform: translate(390%, 97%);
+}
