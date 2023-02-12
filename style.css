@@ -22,6 +22,10 @@ body{
 header{
     text-align: center;
 }
+main{
+    min-width: 768px;
+    max-width: 1266px;
+}
 .cabeçalho{
     color: white;
     display: flex;
