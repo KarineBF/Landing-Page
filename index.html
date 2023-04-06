@@ -10,15 +10,16 @@
 </head>
 <body>
     <header class="cabeçalho">
-        <img class="Mascote-Balle-Bot" src="imagens/Vector.png" alt="Mascote-Balle-Bot">
-        <menu>
-                <ul>
-                    <li><a href="https://discord.com/invite/wagxzStdcR" target="_blank">Comunidade</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=llF6vD-RljE" target="_blank">Tutorial</a></li>
-                    <li><a href="https://github.com/rafaballerini/LandingPage">Open Source</a></li>
-                    <li><a href="https://tecnoblog.net/responde/como-adicionar-bots-no-discord/">Comandos</a></li>
-                </ul>
-        </menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <img class="Mascote-Balle-Bot" src="imagens/Vector.png" alt="Mascote-Balle-Bot">
+                    <ul>
+                        <li><a href="https://discord.com/invite/wagxzStdcR" target="_blank">Comunidade</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=llF6vD-RljE" target="_blank">Tutorial</a></li>
+                        <li><a href="https://github.com/rafaballerini/LandingPage">Open Source</a></li>
+                        <li><a href="https://tecnoblog.net/responde/como-adicionar-bots-no-discord/">Comandos</a></li>
+                    </ul>
+            </menu>
     </header>
     <main>
             <section id="Balle-bot">
@@ -41,8 +42,18 @@
                 <p>3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</p>
             </section>
     </main>
-    <footer id="image-footer">
+    <footer>
         <img src="imagens/BALLERINI.png" alt="Logo-Ballerini">
     </footer>
+    <script>
+        function clickMenu(){
+                if(itens.style.display == 'block'){ /* Se o menu estiver sendo exibido */
+                   itens.style.display = 'none' /* Ele será fechado */
+                }
+                else{ /* Se ele não estiver sendo exibido) */
+                    itens.style.display = 'block' /* Ele será exibido */
+                }
+        }
+    </script>
 </body>
 </html>

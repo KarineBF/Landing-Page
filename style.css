@@ -16,15 +16,12 @@
 }
 body{
     position: relative;
+    min-height: 100%;
     background-attachment: fixed;
     background: linear-gradient(68.15deg, #271416 16.62%, #3f2d28 85.61%); 
 }
 header{
     text-align: center;
-}
-main{
-    min-width: 768px;
-    max-width: 1266px;
 }
 .cabeçalho{
     color: white;
@@ -33,12 +30,17 @@ main{
     align-items: center; /* alinha os itens filhos verticalmente ao centro do elemento flex. */
     justify-content: space-around; /* distribui os itens filhos horizontalmente de forma equilibrada, com espaço igualmente distribuído ao redor de cada item. */
 }
-menu > ul > li > a{
-    padding: 10px;
-    display: block;
-    text-align: center;
+.Mascote-Balle-Bot{
+    top: 1%;
+    left: 18%;
+    position: absolute;
+}
+h1{
+    top: 10%;
+    left: -2%;
 }
 section > h1{
+    position: relative;
     padding: 15px;
     font-size: 2.5em;
     color: rgba(255, 255, 255, 0.877);
@@ -58,20 +60,23 @@ ul{
 li{
     padding: 30px;
 }
+#burguer{
+    display: none;
+}
 #Balle-bot{
-    top: 193%;
+    top: 10%;
     left: 17%;
     position: absolute;
 }
 #paragrafo{
-    top: 106%;
-    left: 5%;
+    top: 110%;
+    left: 6%;
     width: 370px;
     position: absolute;
     word-wrap: break-word;
 }
 #Me-adicione{
-    top: 167%;
+    top: 171%;
     left: 2%;
     padding: 10px;
     color: black;
@@ -97,19 +102,13 @@ a:hover{
     background-color:  #3d1c0196;
 }
 section > img{
-    top: 100%;
+    top: 14%;
     left: 63%;
     width: 243px;
     position: absolute;
 }
-#Funções{
-    top: 823%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-55%, -236%);
-}
 h2{
-    top: -90%;
+    top: -69%;
     left: 27%;
     padding: 32px;
     width: 252px;
@@ -119,15 +118,35 @@ h2{
     color: rgba(255, 255, 255, 0.856);
     border-top: 1px solid rgba(255, 255, 255, 0.404);
 }
+#Funções{
+    top: 60%;
+    left: 33%;
+    position: absolute;
+}
 footer{
     left:0;
     bottom: 0;
-    width: 1837px;
+    width: 100%;
     height: 152px;
-    position: fixed;
+    position: absolute;
     border-top: 1px solid rgba(255, 255, 255, 0.404);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 999; /* adicione isto */
 }
 footer > img{
     width: 200px;
-    transform: translate(390%, 97%);
+    display: inline-block;
+    vertical-align: middle;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+}
+
